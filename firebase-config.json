@@ -1,0 +1,16 @@
+{
+  "demoMode": true,
+  "firebase": {
+    "apiKey": "",
+    "authDomain": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": ""
+  },
+  "cloudModel": "gemini-3.5-flash-lite",
+  "appCheck": {
+    "mode": "debug",
+    "recaptchaSiteKey": ""
+  }
+}

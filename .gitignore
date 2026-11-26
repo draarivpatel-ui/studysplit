@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+_scratch/
+*.log
+video/.tts-cache/
+video/*.wav
+video/*.mp4
+video/manifest.json
+video/verify-frames/

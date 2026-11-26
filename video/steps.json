@@ -1,0 +1,192 @@
+[
+ {
+  "do": "at",
+  "s": 0.55
+ },
+ {
+  "do": "move",
+  "selector": "#notes-input",
+  "ms": 850
+ },
+ {
+  "do": "at",
+  "s": 3.55
+ },
+ {
+  "do": "move",
+  "selector": "#load-sample",
+  "ms": 850
+ },
+ {
+  "do": "at",
+  "s": 6.69
+ },
+ {
+  "do": "click",
+  "selector": "#load-sample"
+ },
+ {
+  "do": "at",
+  "s": 8.09
+ },
+ {
+  "do": "move",
+  "selector": "#split-button",
+  "ms": 750
+ },
+ {
+  "do": "at",
+  "s": 9.09
+ },
+ {
+  "do": "click",
+  "selector": "#split-button"
+ },
+ {
+  "do": "at",
+  "s": 13.05
+ },
+ {
+  "do": "move",
+  "selector": ".flashcard",
+  "ms": 900
+ },
+ {
+  "do": "eval",
+  "js": "document.getElementById('card-grid').scrollTop = 120"
+ },
+ {
+  "do": "at",
+  "s": 14.75
+ },
+ {
+  "do": "eval",
+  "js": "document.getElementById('card-grid').scrollTop = 260"
+ },
+ {
+  "do": "at",
+  "s": 17.26
+ },
+ {
+  "do": "eval",
+  "js": "document.getElementById('card-grid').scrollTop = 0"
+ },
+ {
+  "do": "move",
+  "selector": ".flashcard .card-meta",
+  "ms": 750
+ },
+ {
+  "do": "at",
+  "s": 22.94
+ },
+ {
+  "do": "move",
+  "selector": "#route-monitor",
+  "ms": 900
+ },
+ {
+  "do": "at",
+  "s": 27.35
+ },
+ {
+  "do": "move",
+  "selector": "#privacy-badge",
+  "ms": 700
+ },
+ {
+  "do": "at",
+  "s": 34.96
+ },
+ {
+  "do": "move",
+  "selector": "#probe-state",
+  "ms": 700
+ },
+ {
+  "do": "eval",
+  "js": "window.__studysplit.state.probeOverride = 'absent'; document.getElementById('probe-state').textContent = 'absent · demo probe override'"
+ },
+ {
+  "do": "at",
+  "s": 36.46
+ },
+ {
+  "do": "click",
+  "selector": "#split-button"
+ },
+ {
+  "do": "at",
+  "s": 37.26
+ },
+ {
+  "do": "eval",
+  "js": "if (window.__studysplit.state.runs.length < 2) document.getElementById('split-button').click()"
+ },
+ {
+  "do": "at",
+  "s": 38.51
+ },
+ {
+  "do": "move",
+  "selector": "#lane-cloud",
+  "ms": 700
+ },
+ {
+  "do": "at",
+  "s": 44.71
+ },
+ {
+  "do": "move",
+  "selector": "#mode-pill",
+  "ms": 850
+ },
+ {
+  "do": "at",
+  "s": 54.01
+ },
+ {
+  "do": "move",
+  "selector": "#input-note",
+  "ms": 800
+ },
+ {
+  "do": "at",
+  "s": 62.57
+ },
+ {
+  "do": "move",
+  "selector": "#export-json",
+  "ms": 700
+ },
+ {
+  "do": "at",
+  "s": 63.72
+ },
+ {
+  "do": "click",
+  "selector": "#export-json"
+ },
+ {
+  "do": "at",
+  "s": 64.97
+ },
+ {
+  "do": "move",
+  "selector": "#print-deck",
+  "ms": 650
+ },
+ {
+  "do": "at",
+  "s": 67.45
+ },
+ {
+  "do": "move",
+  "selector": "#last-reason",
+  "ms": 850
+ },
+ {
+  "do": "at",
+  "s": 72.81
+ }
+]

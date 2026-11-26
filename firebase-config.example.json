@@ -1,0 +1,16 @@
+{
+  "demoMode": false,
+  "firebase": {
+    "apiKey": "paste-your-firebase-api-key",
+    "authDomain": "your-project.firebaseapp.com",
+    "projectId": "your-project-id",
+    "storageBucket": "your-project.appspot.com",
+    "messagingSenderId": "your-sender-id",
+    "appId": "your-web-app-id"
+  },
+  "cloudModel": "gemini-3.5-flash-lite",
+  "appCheck": {
+    "mode": "debug",
+    "recaptchaSiteKey": "paste-your-recaptcha-site-key-for-production"
+  }
+}

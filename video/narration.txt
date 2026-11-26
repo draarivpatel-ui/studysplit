@@ -1,0 +1,13 @@
+StudySplit turns lecture notes into flashcards while making the AI route visible.
+
+Paste notes, press split, and the deck appears as atomic question and answer cards.
+
+Each card receives an easy, medium, or hard difficulty tag. Repeated facts collapse into one card, with the duplicate count preserved.
+
+The important hybrid decision is shown beside the editor. When Chrome reports Gemini Nano ready, the prompt takes the on-device lane and the privacy badge appears.
+
+When the local model is missing, downloading, or unavailable, the same interface takes the cloud fallback lane instead of failing.
+
+The real implementation uses Firebase AI Logic with prefer on device mode, structured JSON output, and App Check initialization. Because this public repo ships no key, the live demonstration uses a clearly labeled deterministic demo transport.
+
+The finished deck can be exported as JSON or printed for revision. StudySplit keeps the model route, the reason, and the latency visible on every run.

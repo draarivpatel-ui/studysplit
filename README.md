@@ -3,6 +3,7 @@
 Static web app that turns lecture notes into flashcards and makes the hybrid inference route visible. Built during Nov 2026 for #BuildHybridAI.
 
 Live demo: https://aariv.me/studysplit/
+Demo video: https://youtu.be/96Ht-fahf6A
 
 ## What it does
 

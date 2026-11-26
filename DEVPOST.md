@@ -2,6 +2,8 @@
 
 Paste each section into the matching Devpost field. The copy only claims what this repository demonstrates.
 
+Demo video for the video field: https://youtu.be/96Ht-fahf6A
+
 ## Inspiration
 
 Students often leave lecture with dense notes and good intentions, then lose time turning those notes into review material. StudySplit started from a simple question. What if converting notes into flashcards also taught people how hybrid AI works?

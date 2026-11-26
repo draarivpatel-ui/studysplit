@@ -149,7 +149,7 @@ The demo video workflow is in `video/`. Voice reference audio is local-only and 
 
 ```sh
 VOICE_REF=/path/to/local/voice-ref.wav VOICE_REF_TEXT=/path/to/local/voice-ref.txt python3 video/synth_narration.py
-node ../../make-video.mjs --url http://localhost:4930/ --steps video/steps.json --out video/demo.mp4 --audio video/narration.wav
+node ../../make-video.mjs --url 'http://localhost:4930/?demo=1&probe=available' --steps video/steps.json --out video/demo.mp4 --audio video/narration.wav
 ```
 
 ## Repository layout

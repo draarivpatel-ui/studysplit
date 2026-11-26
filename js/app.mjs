@@ -312,9 +312,7 @@ async function init() {
   const forced = params.get('force');
   if (['auto', 'on-device', 'cloud'].includes(forced)) els.routeForce.value = forced;
   const probeOverride = params.get('probe');
-  if (['available', 'absent', 'downloading', 'downloadable', 'unavailable', 'error', 'degraded'].includes(probeOverride)) {
-    state.probeOverride = probeOverride;
-  }
+  const probeOverrideValid = ['available', 'absent', 'downloading', 'downloadable', 'unavailable', 'error', 'degraded'].includes(probeOverride);
 
   els.loadSample.addEventListener('click', () => {
     els.notes.value = SAMPLE_NOTES;
@@ -340,6 +338,7 @@ async function init() {
     state.runHybrid = makeRunner();
 
     if (state.engine.kind === 'demo') {
+      if (probeOverrideValid) state.probeOverride = probeOverride;
       els.modePill.textContent = 'demo mode';
       els.modePill.classList.remove('firebase');
       setInputNote('Demo mode is active, so cards are generated deterministically without a Firebase key. Route overrides can show both hybrid paths.', 'normal');
@@ -354,6 +353,7 @@ async function init() {
     els.modePill.textContent = 'demo mode';
     setInputNote(`Firebase could not initialize, so demo mode is active. ${error.message || error}`, 'warning');
     state.engine = await createFirebaseAiEngine({ demoMode: true });
+    if (probeOverrideValid) state.probeOverride = probeOverride;
     state.runHybrid = makeRunner();
     await renderInitialProbe();
   }

@@ -78,4 +78,4 @@ A production deployment would use enforced Firebase App Check, a real Firebase p
 
 ## AI disclosure
 
-AI assistance was used to implement, test, document, and prepare submission assets for StudySplit. The generated source was reviewed and executed locally during Nov 2026 for #BuildHybridAI. No AI-generated personal likeness or real user data is included.
+AI assistance was used to implement, test, document, and prepare submission assets for StudySplit. The generated source was reviewed and executed locally during Nov 2026 for #BuildHybridAI.

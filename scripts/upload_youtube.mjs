@@ -90,6 +90,7 @@ const chrome = spawn(CHROME, [
   '--no-first-run', '--no-default-browser-check', '--mute-audio', '--hide-scrollbars',
   '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
   '--disable-blink-features=AutomationControlled', '--disable-gpu',
+  '--disable-features=KeychainKeyProviderUserDataDirProtection',
   '--window-size=1440,900', 'about:blank',
 ], { stdio: 'ignore' });
 

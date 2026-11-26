@@ -47,7 +47,7 @@ export function splitStatements(notes) {
       statements.push({
         text,
         line: lineIndex + 1,
-        excerpt: text.slice(0, 96)
+        excerpt: Array.from(text).slice(0, 96).join('')
       });
     }
   });
@@ -72,7 +72,8 @@ function trimTopic(topic) {
   const firstWord = out.split(' ')[0];
   const preserveCase = PROPER_TOPIC_WORDS.has(firstWord) || /[A-Z]/.test(firstWord.slice(1)) || /\d/.test(firstWord);
   if (/^[A-Z][a-z]/.test(out) && !preserveCase) out = out[0].toLowerCase() + out.slice(1);
-  return out.length > 72 ? `${out.slice(0, 69).trim()}...` : out;
+  const chars = Array.from(out);
+  return chars.length > 72 ? `${chars.slice(0, 69).join('').trim()}...` : out;
 }
 
 export function inferTopic(statement) {
